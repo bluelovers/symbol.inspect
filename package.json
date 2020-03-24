@@ -2,9 +2,20 @@
   "name": "symbol.inspect",
   "version": "1.0.0",
   "description": "<symbol> that can be used to declare custom inspect functions.",
+  "homepage": "https://github.com/bluelovers/symbol.inspect#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/symbol.inspect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/symbol.inspect.git"
+  },
   "license": "ISC",
   "author": "bluelovers",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "coverage": "npx nyc yarn run test",
     "lint": "npx eslint **/*.ts",
@@ -18,5 +29,10 @@
     "test:mocha": "npx mocha --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
     "tsc:default": "tsc -p tsconfig.json",
     "tsc:esm": "tsc -p tsconfig.esm.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@bluelovers/tsconfig": "^1.0.19",
+    "@types/node": "^13.9.3"
   }
 }

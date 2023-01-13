@@ -4,5 +4,5 @@
  * same as Symbol.for('nodejs.util.inspect.custom')
  * same as util.inspect.custom
  */
-const SymbolInspect = Symbol.for('nodejs.util.inspect.custom');
-export = SymbolInspect;
+export const SymbolInspect = Symbol.for('nodejs.util.inspect.custom');
+export default SymbolInspect;

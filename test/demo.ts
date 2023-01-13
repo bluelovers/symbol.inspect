@@ -1,4 +1,4 @@
-import SymbolInspect from '../index';
+import SymbolInspect from '../src/index';
 
 console.log({
 	[SymbolInspect]()

@@ -1,6 +1,6 @@
 {
   "name": "symbol.inspect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "<symbol> that can be used to declare custom inspect functions.",
   "keywords": [
     "nodejs",

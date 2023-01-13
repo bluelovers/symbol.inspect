@@ -1,6 +1,6 @@
 {
   "name": "symbol.inspect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "<symbol> that can be used to declare custom inspect functions.",
   "keywords": [
     "nodejs",
@@ -55,7 +55,7 @@
     "build": "yarn run build:tsdx && yarn run build:dts:tsc",
     "build:dts:bundle": "ynpx @bluelovers/dts-bundle-generator -o ./dist/index.d.ts ./src/index.ts --no-banner --inline-declare-global & echo build:dts:bundle",
     "build:dts:copy": "copy .\\src\\index.d.ts .\\dist\\index.d.ts & echo build:dts",
-    "build:dts:tsc": "yarn run build:dts:copy && yarn run build:dts:tsc:emit && yarn run build:dts:copy",
+    "build:dts:tsc": "yarn run build:dts:copy && yarn run build:dts:tsc:emit && yarn run build:dts:copy & echo build:dts:tsc",
     "build:dts:tsc:emit": "tsc --emitDeclarationOnly --declaration --noEmit false",
     "build:tsdx": "ynpx @bluelovers/tsdx build --target node",
     "ci:install": "yarn install --frozen-lockfile && yarn add -W yarn-tool lerna ynpx ts-node ts-jest jest typescript@next @bluelovers/jest-config",
